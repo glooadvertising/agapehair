@@ -1,0 +1,71 @@
+.section-left-img {
+    width: $full-width;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: hidden;
+    @include breakpoint('<=large') {
+        height: 60vh;
+    }
+    @include breakpoint('<=small') {
+        flex-direction: column-reverse;
+        height: unset;
+    }
+
+    svg {
+        position: absolute;
+        left: 30%;
+        bottom: $medium;
+        z-index: 1;
+        @include breakpoint('<=large') {
+            left: 40%;
+        }
+        @include breakpoint('<=small') {
+            left: 0;
+            z-index: 3;
+            opacity: 75%;
+        }
+
+    }
+    .section-image {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        left: 0;
+        z-index: 2; 
+        position: relative;
+        margin-right: auto;
+        @include breakpoint('<=large') {
+            width: 40%;
+        }
+        @include breakpoint('<=small') {
+            width: 100%;
+            height: unset;
+            aspect-ratio: 6/9;
+        }
+
+    }
+    .container-wrapper {
+        position: absolute;
+        // background-color: red;
+        width: 100%;
+        height: 100%;
+        display: inherit;
+        flex-direction: inherit;
+        align-items: inherit;
+        z-index: 10;
+        justify-content: inherit;
+
+        @include breakpoint('<=small') {
+            position: relative;
+            padding-top: $ultra-thick;
+            padding-bottom: $ultra-thick;
+        }
+
+    }
+
+
+}

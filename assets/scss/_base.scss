@@ -1,0 +1,478 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease-out all;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $font_body;
+    color: $color_dark;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font_heading;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: $color_lila;
+    }
+}
+
+.container {
+    all: inherit;
+    width: $page-width;
+    max-width: $full-width;
+    height: 100%;
+    padding: 0 $medium;
+    margin: 0 auto;
+
+}
+
+.group-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 2rem;
+    width: 33%;
+    @include breakpoint('<=small') {
+        width: 100%;
+    }
+
+}
+
+.our-team {
+    svg {
+        path {
+            fill: $color_highlight;
+        }
+    }
+}
+.our-services {
+    background-image: url('../images/our-services_bg.jpg');
+    background-size: contain;
+    &::before {
+        content: '';
+        display: flex;
+        position: absolute;
+        background-color: $color_light;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 75%;
+
+    }
+
+    svg {
+        path {
+            fill: $color_grass;
+        }
+    }
+}
+
+.our-products {
+    background-color: $color_grass;
+    color: $color_lila;
+    svg {
+        path {
+            fill: $color_lila;
+        }
+        z-index: 1;
+    }
+    .group-vert {
+        margin-left: 50%;
+        @include breakpoint('<=small') {
+            margin-left: unset;
+        }
+    }
+
+}
+
+.footer {
+    background-color: $color_dark;
+    padding: calc($ultra-thick * 2) 0;
+    color: $color_light;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: $ultra-thick;
+    @include breakpoint('<=small') {
+        flex-direction: column;
+    }
+
+    .col-left {
+        width: 30%;
+        gap: $medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include breakpoint('<=small') {
+            width: 100%;
+        }
+
+        .agape-logo {
+            width: 200px;
+        }
+        .social-media-links {
+            display: flex;
+            gap: $thin;
+            svg {
+                width: 36px;
+            }
+        }
+    }
+    .col-right {
+        width: 35%;
+        gap: $medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include breakpoint('<=large') {
+            width: 50%;
+        }
+        @include breakpoint('<=small') {
+            width: 100%;
+        }
+
+    }
+    svg {
+        path {
+            fill: $color_light;
+        }
+    }
+
+}
+#contact {
+    display: none;
+}
+.section-contact {
+    padding: calc($ultra-thick * 2) 0;
+    .form-wrapper{
+        margin: 0 auto;
+        width: 40%;
+        @include breakpoint('<=medium') {
+            width: 70%;
+        }
+        @include breakpoint('<=small') {
+            width: 100%;
+        }
+        .fluentform {
+            font-family: $font_body;
+            max-width: 100%;
+            margin-top: $medium;
+            input.ff-el-form-control, textarea.ff-el-form-control {
+                border: 1px solid $color_dark;
+                border-radius: 0;
+                &::placeholder {
+                    text-transform: uppercase;
+                }
+            }
+            .ff-text-left {
+                text-align: right;
+            }
+            button {
+                background-color: unset;
+            }
+        }
+    }
+}
+
+.page-content {
+    padding: calc($ultra-thick * 1.5) 0 calc($ultra-thick * 2) 0;
+    position: relative;
+    // display: flex;
+    // flex-direction: row;
+    gap: $thin;
+    .col-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: inherit;
+        @include breakpoint('<=medium') {
+            z-index: 1;
+        }
+        > p {
+            width: 50%;
+            @include breakpoint('<=medium') {
+                width: 100%;
+            }
+        }
+    }
+    svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include breakpoint('<=medium') {
+            z-index: 0;
+        }
+
+    }
+
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: calc($ultra-thin / 2);
+    margin-bottom: $ultra-thick;
+    @include breakpoint('<=large') {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint('<=medium') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint('<=small') {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+.services-section {
+    padding: $ultra-thick 0;
+    position: relative;
+    svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        path {
+            fill: $color_grass;
+            @include breakpoint('<=large') {
+                fill: $color_grass;
+                opacity: 50%;
+            }
+        }
+    
+    }
+
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include breakpoint('<=large') {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint('<=small') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint('<=xsmall') {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .service-card{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: calc(33% - ($thick *2));
+        gap: $ultra-thin;
+        position: relative;
+        @include breakpoint('<=large') {
+            width: 100%;
+        }
+        @include breakpoint('<=medium') {
+            padding: $thin;
+            margin-top: $thin;
+        }
+        @include breakpoint('<=xsmall') {
+            padding: none;
+        }
+    
+        &:not(:first-child):not(:nth-child(4)) {
+            padding-left: $thick;
+            @include breakpoint('<=medium') {
+                padding: $thin;
+            }
+            @include breakpoint('<=xsmall') {
+                padding: none;
+            }
+            }
+        &:nth-child(-n+3) {
+            margin-bottom: $thin;
+            &:after {
+                content: '';
+                display: flex;
+                width: calc(100% + 1px);
+                height: 1px;
+                background-color: $color_dark;
+                position: absolute;
+                bottom: -$thin;
+                left: 0;
+                right: 0;
+            }
+        }
+        @include breakpoint('<=small') {
+            &:nth-child(-n+4) {
+                margin-bottom: $thin;
+                &:after {
+                    content: '';
+                    display: flex;
+                    width: calc(100% + 1px);
+                    height: 1px;
+                    background-color: $color_dark;
+                    position: absolute;
+                    bottom: -$thin;
+                    left: 0;
+                    right: 0;
+                }
+            }
+    
+        }
+        @include breakpoint('<=xsmall') {
+            &:nth-child(-n+5) {
+                margin-bottom: $thin;
+                &:after {
+                    content: '';
+                    display: flex;
+                    width: calc(100% + 1px);
+                    height: 1px;
+                    background-color: $color_dark;
+                    position: absolute;
+                    bottom: -$thin;
+                    left: 0;
+                    right: 0;
+                }
+            }
+    
+        }
+        &:nth-child(n+4) {
+            // border-top: 1px solid $color_dark;
+            padding-top: $ultra-thin;
+            margin-top: $thin;
+            h4 {
+                margin-top: $thin;
+            }
+        }
+        &:nth-child(-n+2), &:nth-child(3n+1), &:nth-child(3n+2)  {
+            border-right: 1px solid $color_dark;
+            padding-right: $thick;
+            @include breakpoint('<=small') {
+                border: none;
+                padding-right: $thin;
+            }
+        
+        }
+        @include breakpoint('<=small') {
+            &:nth-child(odd) {
+                border-right: 1px solid $color_dark;
+            }
+        }
+        @include breakpoint('<=xsmall') {
+            &:nth-child(odd) {
+                border: none;
+            }
+        }
+    
+        p {
+            // font-size: .8rem;
+            margin-bottom: $medium;
+        }
+    }
+}
+
+.product-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    .prod-image {
+        aspect-ratio: 1;
+        max-width: 20%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+.product-brands {
+    width: $full-width;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_neutral;
+    padding: $ultra-thick 0;
+    gap: calc($ultra-thick * 2);
+    @include breakpoint('<=medium') {
+        gap: $thick;
+    }
+    @include breakpoint('<=small') {
+        gap: $medium;
+        flex-wrap: wrap;
+    }
+
+
+    .prod-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint('<=small') {
+            padding: $thin;
+        }
+    
+        img {
+            max-width: 300px;
+            max-height: 100px;
+            mix-blend-mode: multiply;
+        }
+    }
+}
+
+
+.page-id-8 {
+    .wiggle {
+        path {
+            fill: $color_highlight;
+        }
+    }
+}
+
+.page-id-10 {
+    .wiggle {
+        bottom: $medium
+    }
+}
+
+.services-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 0;
+    @include breakpoint('<=small') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+        &:nth-child(-n + 2) {
+            aspect-ratio: 6/9;
+            @include breakpoint('<=small') {
+                width: 50%;
+            }
+        
+        }
+        &:nth-child(3) {
+            aspect-ratio: 18/9;
+            @include breakpoint('<=small') {
+                width: 100%;
+            }
+
+        }
+    }
+
+
+}
