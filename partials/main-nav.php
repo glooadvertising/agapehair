@@ -6,7 +6,7 @@
             </span>
             <?php wp_nav_menu(); ?>
         </div>
-        <a href="mailto:0362232923" class="button">
+        <a href="https://apps.kitomba.com/bookings/agape" target="_blank" class="button">
             Book an appointment
         </a>
 </nav>

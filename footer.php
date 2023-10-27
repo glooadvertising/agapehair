@@ -8,7 +8,7 @@
                 </a>
                 <p>
                     <a href="https://www.google.com/maps/place/Agap%C3%A9+Hair/@-42.8832634,147.3275594,15z/data=!4m2!3m1!1s0x0:0xdbe1a018d7e8e7f9?sa=X&ved=2ahUKEwil2rjgmJWBAxXXwjgGHfPdCk0Q_BJ6BAhCEAA&ved=2ahUKEwil2rjgmJWBAxXXwjgGHfPdCk0Q_BJ6BAhOEAg">Level 1, 148 Collins Street, Hobart</a><br>
-                    <a href="mailto:0362232923">03 6223 2923</a>
+                    <a href="tel:0362232923">03 6223 2923</a>
                 </p>
                 <div class="social-media-links">
                 <a href="https://www.facebook.com/AgapeHairSalon" target="_blank" class="facebook">

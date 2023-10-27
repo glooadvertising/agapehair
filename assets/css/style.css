@@ -103,11 +103,11 @@ a:hover {
   opacity: 75%;
 }
 .our-services svg path {
-  fill: #1D502F;
+  fill: #07452E;
 }
 
 .our-products {
-  background-color: #1D502F;
+  background-color: #07452E;
   color: #D5BEDC;
 }
 .our-products svg {
@@ -294,11 +294,11 @@ a:hover {
   bottom: 0;
 }
 .services-section svg path {
-  fill: #1D502F;
+  fill: #07452E;
 }
 @media screen and (max-width: 1280px) {
   .services-section svg path {
-    fill: #1D502F;
+    fill: #07452E;
     opacity: 50%;
   }
 }
@@ -628,7 +628,7 @@ a:hover {
   }
 }
 .hero-video svg .cls-1, .hero-video svg .cls-2 {
-  fill: #1D502F;
+  fill: #07452E;
 }
 .hero-video video {
   -o-object-fit: cover;
