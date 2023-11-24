@@ -224,7 +224,7 @@ a:hover {
 .section-contact .form-wrapper .fluentform .ff-text-left {
   text-align: right;
 }
-.section-contact .form-wrapper .fluentform button {
+.section-contact .form-wrapper .fluentform button.button {
   background-color: unset;
   padding: 0.5rem 4rem;
   border: 1px solid;
