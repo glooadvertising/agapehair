@@ -568,7 +568,6 @@ a:hover {
   display: flex;
   overflow: hidden;
   width: 0;
-  opacity: 0%;
   transition: all 0.25s ease-out;
   display: none;
 }
@@ -594,7 +593,6 @@ a:hover {
 
 .menu-visible {
   width: 100% !important;
-  opacity: 100% !important;
   display: block !important;
 }
 
