@@ -178,6 +178,9 @@ a:hover {
     width: 100%;
   }
 }
+.footer .col-right .sitebygloo {
+  font-weight: 200;
+}
 .footer svg path {
   fill: #FFFFFF;
 }

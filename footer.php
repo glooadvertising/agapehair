@@ -47,6 +47,9 @@
                     Friday: 9am - 4pm<br>
                     Saturday: 9am - 4pm<br>
                 </p>
+                <p class="sitebygloo">
+                    Site by <a href="http://glooadvertising.com.au" target="_blank">Gloo</a>
+                </p>
             </div>
     
 

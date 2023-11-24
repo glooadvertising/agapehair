@@ -140,6 +140,10 @@ a {
         @include breakpoint('<=small') {
             width: 100%;
         }
+        .sitebygloo {
+            font-weight: 200;
+
+        }
 
     }
     svg {

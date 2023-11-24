@@ -30,6 +30,12 @@ jQuery(document).ready(function($) {
         $('.menu-wrapper .menu-main-menu-container').toggleClass('menu-visible');
     });
 
+    $('.show-form').click(function() {
+        $('.hamburger').toggleClass('hamburger-clicked');
+        $('.menu-wrapper .menu-main-menu-container').toggleClass('menu-visible');
+    });
+
+
 
 });
 
