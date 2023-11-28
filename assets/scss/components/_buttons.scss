@@ -1,4 +1,7 @@
-.button {
+button, .button {
+    background-color: transparent;
+    padding-block: unset;
+    padding-inline: unset;
     padding: $ultra-thin $ultra-thick;
     border: 1px solid;
     border-radius: 100px;

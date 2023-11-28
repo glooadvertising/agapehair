@@ -648,7 +648,10 @@ a:hover {
   z-index: 3;
 }
 
-.button {
+button, .button {
+  background-color: transparent;
+  padding-block: unset;
+  padding-inline: unset;
   padding: 0.5rem 4rem;
   border: 1px solid;
   border-radius: 100px;
