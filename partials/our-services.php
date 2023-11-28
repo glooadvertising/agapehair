@@ -17,6 +17,6 @@
         </g>
     </g>
     </svg>
-    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/agape-3.jpg" alt="" class="section-image"  data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="300">
+    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/agape-3.jpg" alt="Our services" class="section-image"  data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="300">
 
 </section>
