@@ -270,7 +270,13 @@ a:hover {
 }
 @media screen and (max-width: 1280px) {
   .team {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .team .profile-card {
+    grid-column: span 2;
+  }
+  .team .profile-card:first-child, .team .profile-card:nth-of-type(2) {
+    grid-column: span 3;
   }
 }
 @media screen and (max-width: 980px) {
