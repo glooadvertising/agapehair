@@ -19,6 +19,6 @@
             </g>
         </g>
     </svg>
-    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/our-team.jpg" alt="Aqui algo de texto" class="section-image" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="300" >
+    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/_I8A8667.jpg" alt="Our team" class="section-image" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="300" >
 
 </section>

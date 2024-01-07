@@ -45,7 +45,7 @@
                     Wednesday: 9am - 7.30pm<br>
                     Thursday: 9am - late<br>
                     Friday: 9am - 4pm<br>
-                    Saturday: 9am - 4pm<br>
+                    Saturday: By <a href="https://apps.kitomba.com/bookings/agape" target="_blank">Appointment</a><br>
                 </p>
                 <p class="sitebygloo">
                     Site by <a href="http://glooadvertising.com.au" target="_blank">Gloo</a>
