@@ -112,6 +112,7 @@ a {
         gap: $medium;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: flex-start;
         @include breakpoint('<=small') {
             width: 100%;

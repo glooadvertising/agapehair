@@ -21,9 +21,9 @@ jQuery(document).ready(function($) {
     
     }
     
-    $('.show-form').click(function() {
-        $('#contact').css('display', 'flex');
-    });
+    // $('.show-form').click(function() {
+    //     $('#contact').css('display', 'flex');
+    // });
 
     $('.hamburger-wrapper').click(function() {
         $('.hamburger').toggleClass('hamburger-clicked');
