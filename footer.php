@@ -55,7 +55,7 @@
 
         </div>
     </footer>
-    <?php get_template_part( 'partials/chat' );?>
+    <!--?php get_template_part( 'partials/chat' );?-->
     <?php wp_footer();?>
 </body>
 </html>
